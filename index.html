@@ -1,5 +1,105 @@
 <html>
-	<head></head>
+	<head>
+    <title>Jenny Fish</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script>
+		  function toggleshowhide(elem) {
+				var x = document.getElementById(elem);
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+		</script>
+	</head>
 	<body>
+		<div class="topbar-nav">
+			<!--<img src="https://avatars3.githubusercontent.com/u/22178963?s=460&v=4"/>-->
+			<a href="#home">jennyafish</a>
+			<a class="active" href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="https://github.com/jennyafish">GitHub</a>
+			<a href="#arcade">Arcade</a>
+			<a href="#references">Reference Guides</a>
+			<a href="#puzzles">Puzzles</a>
+		</div>
+<!--
+		<div style="position: relative; width: 100%;">
+		  <img style="width: 100%; z-index: -1; position: absolute;" src="./assets/temp.gif" />
+			Jenny Fish
+	  </div>
+-->
+		<div class="header">
+			Jenny Fish
+		</div>
+
+
+
+		<br>
+		built with <span class="acc"><3</span> using html/css
+
+	  <div id="resume">
+			<h3>EDUCATION</h3>
+				<span class="acc">May 2022</span> | Carnegie Mellon University, School of Computer Science
+				<br>
+				<span class="acc">Jun 2018</span> | The Pingry School
+			<h3>WORK & RESEARCH EXPERIENCE</h3>
+				<div class="expandable" onclick="toggleshowhide('about4')">Jan 2019 - Aug 2019 | The Wyvern Project, Institute for Software Research</div>
+				<div id="about4" style="display: none">
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\
+					Wyvern is a programming language which is currently in development. It is designed to enforce
+					architectural constraints and good software design principles, while also
+				</div>
+				<div class="expandable" onclick="toggleshowhide('about3')">Jun 2018 - Aug 2018 | Code Team Intern, The Pingry School</div>
+				<div id="about3" style="display: none">
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\
+
+				</div>
+				<div class="expandable" onclick="toggleshowhide('about2')">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspJul 2017 | Research In Science and Engineering (RISE) Internship Program, Boston University</div>
+				<div id="about2" style="display: none">
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\
+
+				</div>
+				<div class="expandable" onclick="toggleshowhide('about1')">Jun 2016 - Aug 2016 | Junior Instructor, Zatna</div>
+				<div id="about1" style="display: none">
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\
+
+				</div>
+				<br>
+				*click to expand
+			<h3>SKILLS</h3>
+			Python, Java, C, SMLNJ, HTML/Javascript, Google Apps Script, Git, LaTeX
+			<h3>PROJECTS</h3>
+			hackCMU
+			<br>
+			TartanHacks
+			<h3>COURSEWORK</h3>
+			<table>
+				<tr><th>Fall 2018</th><th>Spring 2019</th></tr>
+				<tr><td>15-151 Mathematical Foundations for Computer Scientists</td><td>15-251 Great Ideas in Theoretical Computer Science</td></tr>
+				<tr><td>15-122 Principles of Imperative Computation</td><td>15-150 Principles of Functional Programming</td></tr>
+				<tr><td>21-241 Matrices & Linear Transformations</td><td>73-102 Principles of Microeconomics</td></tr>
+				<tr><td>76-101 Interpretation and Argument</td><td>82-278 Japanese Film & Literature</td></tr>
+				<tr><td>15-131 Great Practical Ideas for Computer Scientists</td><td>98-317 Hype for Types</td></tr>
+				<tr></tr>
+				<tr><th>Fall 2019*</th><th>Spring 2020*</th></tr>
+				<tr><td>15-210 Parallel and Sequential Data Structures & Algorithms</td><td></td></tr>
+				<tr><td>15-213 Introduction to Computer Systems</td><td></td></tr>
+				<tr><td>21-259 Calculus in 3-D</td><td></td></tr>
+				<tr><td>80-305 Choices, Decisions, & Games</td><td></td></tr>
+				<tr><td>98-242 Intro to Esoteric Programming Languages</td><td></td></tr>
+				<tr><td>98-349 Design and Analysis of Logic Puzzle Games</td><td></td></tr>
+			</table>
+			<h3>HOBBIES & INTERESTS</h3>
+			My tech related interests include software development, PL theory, and edtech. I am also interested in physics and chemistry.
+			<br>
+			I enjoy doing puzzles and participating in puzzle hunts in my free time.<br>
+			Our team placed in the <a href="https://www.predictivetechnologies.com/en/campus-events/cmu-puzzle-tournament-2019">APT MasterCard Puzzle Tournament 2019</a> and <a href="https://buildyourfuture.withgoogle.com/events/tech-challenge/#!?detail-content-tabby_activeEl=about">Google Tech Challenge Pittsburgh 2019</a>.
+			<br>
+			I also dabble in pixel art sometimes (i.e. the header animation on this page!)
+			<h3>MISCELLANEOUS CODE SNIPPETS</h3>
+		</div>
+
 	</body>
 </html>
