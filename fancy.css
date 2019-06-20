@@ -154,7 +154,15 @@ body {
   border-radius: 50px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   transition: background .26s ease-in-out, color .26s ease-in-out, border-color .26s ease-in-out;
+}
+.link {
+  color: #fce044;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
 }
 .button:hover {
   background: #fce044;
@@ -183,5 +191,5 @@ body {
 .footer {
   background-color:black;
   color:white;
-  
+
 }
