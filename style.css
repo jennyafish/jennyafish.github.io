@@ -1,88 +1,209 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
-body {
-  background-color: #1c1d43/*#212121*/;
-  color: #f2f2f2;
-  font-family:'Inconsolata';
-  margin: 0 auto;
-}
-.topbar-nav {
-  background-color: black;
-  overflow: hidden;
-}
-.topbar-nav a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.topbar-nav img {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  border-radius: 5px;
-}
-/* TODO: fade effect on hover */
-.topbar-nav a:hover {
-  background-color: #2f1c43;
-  color: white;
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 
-.topbar-nav a.active {
-  background-color: #4f503e;
-  color: black;
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+body {
+  font-family: Quicksand;
+  background-color: #202020;
+}
+/*
+.header {
+  font-size: 32px;
+  text-align: center;
+  color: white;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+*/
+body {
+  color:#d0d0d0;
+}
+.highlight {
+  color: #fce044;
 }
 
 .header {
-  background-image: url('./assets/temp.gif');
-  width: 100%;
-  height: 75%;
-  background-repeat:no-repeat;
-  background-size: cover;
-  font-size: 36px;
-  display:flex;
+  color:#d0d0d0;
+  font-size:24px;
+  /*margin-left:20%;
+  margin-top:10%;*/
+  animation: fadeIn 2.5s ease;
+  text-align: left;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:80px;
+  width:60%;
+}
+.content-header {
+  font-size:36px;
+  color:white;
+}
+.content-block {
+  font-size:24px;
+  text-align:left;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:60px;
+  width:60%;
+}
+.card {
+  margin: auto;
+  display: flex;
   justify-content:center;
-  align-items:center;
+  align-content:center;
+  flex-direction:column;
+  border-radius: 50%;
+  width:300px;
+  height:300px;
+  border-color:#fce044;
+  border-width: 3px;
+  border-style: inset;
+  background-color: transparent;
+  text-align: center;
+  vertical-align:bottom;
 }
-a {
-  color: #912794;
+.card:hover {
+  border-style: dotted;
 }
-a:hover {
+.card .title {
+  color:#fce044;
+  font-size:24px;
+}
+.card .body {
+  margin-top:5px;
+  color:#d0d0d0;
+  font-size:20px;
+}
+.card .supplement {
+  margin-top:5px;
+  color:#fce044;
+  font-size:16px;
+}
+::selection {
+  color:black;
+  background-color: #fce044;
+}
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 140px;
+  padding: 12px 16px;
+  background: transparent;
+  color: white;
+  border: 1px solid #fce044;
+  border-radius: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  transition: background .26s ease-in-out, color .26s ease-in-out, border-color .26s ease-in-out;
+}
+.card-button {
+  margin-top:8px;
+  align-self:center;
+  font-size:16px;
+  width: 140px;
+  padding: 12px 16px;
+  background: transparent;
+  color: white;
+  border: 1px solid #fce044;
+  border-radius: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .26s ease-in-out, color .26s ease-in-out, border-color .26s ease-in-out;
+}
+.link {
+  color: #fce044;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.button:hover {
+  background: #fce044;
   color: black;
-  background-color: #912794;
 }
-#resume {
-  margin: 15;
-}
-.acc {
-  color: #912794;
-}
-.expandable:hover {
-  color: #912794;
-}
-/*
-h3 {
-  color: #c6c7d0;
-}
-*/
-/*
-#resume {
-  background-color: white;
+.card-button:hover {
+  background: #fce044;
   color: black;
 }
-
-
-ALL THE GOOGLE FONTS
-Cutive Mono (basic monospace)
-Share Tech Mono (game-design style font)
-Inconsolata (also pretty nice monospace)
-
-Theme Colors:
-#1c1d43 (background base color)
-#251c43 (highlight 1)
-#2f1c43 (highlight 2)
-#4f503e (gold highlight)
-*/
+.projects {
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+}
+.projects td {
+  padding:15px;
+  text-align:center;
+  display:block;
+  flex:1;
+}
+.projects tr {
+  display:flex;
+  flex-wrap:wrap;
+}
+.exp .title {
+  color: #fce044;
+}
+.exp .time {
+  font-style:italic;
+  font-size:20px;
+}
+.exp ul {
+  font-size:22px;
+}
+.exp .about {
+  font-size:20px;
+  font-style:italic;
+}
+footer {
+  background-color:black;
+  color:white;
+  overflow:hidden;
+}
